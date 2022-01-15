@@ -8,6 +8,8 @@ import { BASE_URL } from 'utils/requests'
 function Listing() {
   const [pageNumber, setPageNumber] = useState(0)
 
+  setPageNumber(1)
+
   const [page, setPage] = useState<MoviePage>({
     content: [],
     last: true,
